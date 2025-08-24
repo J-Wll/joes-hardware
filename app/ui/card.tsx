@@ -1,6 +1,7 @@
 import Image from "next/image"
+import { Product } from "@/app/types/product"
 
-export default function Card({ content }: { content: any }) {
+export default function Card({ content }: { content: Product }) {
     return (
         <div className="display-flex flex-col border border-gray-200 rounded-lg max-w-50 lg:max-w-71 xl:max-w-80 text-center p-2 min-h-105 align-middle justify-center">
             <Image
