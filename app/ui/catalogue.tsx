@@ -1,10 +1,10 @@
-import card from "@/app/ui/card";
+import Card from "@/app/ui/card";
 
 export default function Catalogue({ products }: { products: Array<any> }) {
     return (
-        <div className="catalogue">
+        <div className="flex flex-wrap gap-6 justify-center">
             {products.map((p) => (
-                <li key={p.sku}>{p.name}</li>
+                <Card key={p.sku} content={p} />
             ))}
         </div>
     )

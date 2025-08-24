@@ -9,7 +9,7 @@ export default async function Home() {
   // const filterParams = await props.filterParams;
   return (
     <>
-      <main className="flex w-full flex-col p-5 lg:p-10">
+      <main className="flex w-full flex-col p-6 lg:p-8">
         {/* <h2 className="text-xl">On this main catalogue page, please use the search and filters provided</h2> */}
 
         <Search placeholder="Search..."/>
