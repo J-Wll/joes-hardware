@@ -1,7 +1,11 @@
-export default function Catalogue(){
+import card from "@/app/ui/card";
+
+export default function Catalogue({ products }: { products: Array<any> }) {
     return (
         <div className="catalogue">
-            <h2 className="text-xl">Catalogue Component Placeholder</h2>
+            {products.map((p) => (
+                <li key={p.sku}>{p.name}</li>
+            ))}
         </div>
     )
 }

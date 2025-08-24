@@ -1,17 +1,21 @@
-import Catalogue from "./ui/catalogue";
-import Search from "./ui/search";
-import Filters from "./ui/filters";
-// import products from "./api/products";
+import Catalogue from "@/app/ui/catalogue";
+import Search from "@/app/ui/search";
+import Filters from "@/app/ui/filters";
 
-export default function Home() {
+export default async function Home() {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/products`);
+  const products = await res.json();
+  // const searchParams = await props.searchParams;
+  // const filterParams = await props.filterParams;
   return (
     <>
-      <main className="flex w-full align-middle justify-center">
+      <main className="flex w-full flex-col p-5 lg:p-10">
         {/* <h2 className="text-xl">On this main catalogue page, please use the search and filters provided</h2> */}
 
-        <Search />
+        <Search placeholder="Search..."/>
         <Filters />
-        <Catalogue />
+        <Catalogue products={products} />
+
 
       </main>
     </>
