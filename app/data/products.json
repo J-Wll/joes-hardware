@@ -6,7 +6,7 @@
     "price": 12.99,
     "stock": 45,
     "status": "In Stock",
-    "image": "/timber-2x4.jpg"
+    "image": "/products/TIM001.webp"
   },
   {
     "sku": "PLU205",
@@ -15,7 +15,7 @@
     "price": 8.5,
     "stock": 8,
     "status": "Low Stock",
-    "image": "/15mm-copper.jpg"
+    "image": "/products/PLU205.webp"
   },
   {
     "sku": "ELE301",
@@ -23,7 +23,8 @@
     "category": "Electrical",
     "price": 3.99,
     "stock": 156,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/ELE301.webp"
   },
   {
     "sku": "GAR410",
@@ -31,7 +32,8 @@
     "category": "Garden",
     "price": 45,
     "stock": 0,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "image": "/products/GAR410.webp"
   },
   {
     "sku": "TOO502",
@@ -39,7 +41,8 @@
     "category": "Tools",
     "price": 89.99,
     "stock": 22,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/TOO502.webp"
   },
   {
     "sku": "PAI603",
@@ -47,7 +50,8 @@
     "category": "Paint",
     "price": 24.99,
     "stock": 67,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/PAI603.webp"
   },
   {
     "sku": "TIM007",
@@ -55,7 +59,8 @@
     "category": "Timber",
     "price": 32.5,
     "stock": 12,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/TIM007.webp"
   },
   {
     "sku": "PLU220",
@@ -63,7 +68,8 @@
     "category": "Plumbing",
     "price": 15.99,
     "stock": 3,
-    "status": "Low Stock"
+    "status": "Low Stock",
+    "image": "/products/PLU220.webp"
   },
   {
     "sku": "ELE305",
@@ -71,7 +77,8 @@
     "category": "Electrical",
     "price": 6.99,
     "stock": 89,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/ELE305.webp"
   },
   {
     "sku": "GAR415",
@@ -79,7 +86,8 @@
     "category": "Garden",
     "price": 18.99,
     "stock": 0,
-    "status": "Out of Stock"
+    "status": "Out of Stock",
+    "image": "/products/GAR415.webp"
   },
   {
     "sku": "TOO510",
@@ -87,7 +95,8 @@
     "category": "Tools",
     "price": 12.5,
     "stock": 34,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/TOO510.webp"
   },
   {
     "sku": "PAI607",
@@ -95,7 +104,8 @@
     "category": "Paint",
     "price": 16.99,
     "stock": 28,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/PAI607.webp"
   },
   {
     "sku": "TIM012",
@@ -103,7 +113,8 @@
     "category": "Timber",
     "price": 28.99,
     "stock": 7,
-    "status": "Low Stock"
+    "status": "Low Stock",
+    "image": "/products/TIM012.webp"
   },
   {
     "sku": "PLU230",
@@ -111,7 +122,8 @@
     "category": "Plumbing",
     "price": 22.99,
     "stock": 15,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/PLU230.webp"
   },
   {
     "sku": "ELE310",
@@ -119,7 +131,8 @@
     "category": "Electrical",
     "price": 19.99,
     "stock": 41,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/ELE310.webp"
   },
   {
     "sku": "GAR420",
@@ -127,7 +140,8 @@
     "category": "Garden",
     "price": 35.99,
     "stock": 9,
-    "status": "Low Stock"
+    "status": "Low Stock",
+    "image": "/products/GAR420.webp"
   },
   {
     "sku": "TOO515",
@@ -135,7 +149,8 @@
     "category": "Tools",
     "price": 24.99,
     "stock": 18,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/TOO515.webp"
   },
   {
     "sku": "PAI610",
@@ -143,6 +158,7 @@
     "category": "Paint",
     "price": 19.99,
     "stock": 33,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/products/PAI610.webp"
   }
 ]

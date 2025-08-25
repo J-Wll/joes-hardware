@@ -5,9 +5,11 @@ export default function Filters() {
                 <option value="" disabled>Filter by category</option>
                 <option value="all">All categories</option>
                 <option value="tools">Tools</option>
-                <option value="hardware">Hardware</option>
-                <option value="appliances">Appliances</option>
-                <option value="outdoors">Outdoors</option>
+                <option value="timber">Timber</option>
+                <option value="plumbing">Plumbing</option>
+                <option value="electrical">Electrical</option>
+                <option value="garden">Garden</option>
+                <option value="paint">Paint</option>
             </select>
 
             <select className="mr-4" defaultValue="all">
