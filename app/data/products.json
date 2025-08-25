@@ -5,7 +5,8 @@
     "category": "Timber",
     "price": 12.99,
     "stock": 45,
-    "status": "In Stock"
+    "status": "In Stock",
+    "image": "/timber-2x4.jpg"
   },
   {
     "sku": "PLU205",
@@ -13,7 +14,8 @@
     "category": "Plumbing",
     "price": 8.5,
     "stock": 8,
-    "status": "Low Stock"
+    "status": "Low Stock",
+    "image": "/15mm-copper.jpg"
   },
   {
     "sku": "ELE301",
