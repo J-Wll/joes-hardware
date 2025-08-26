@@ -21,14 +21,14 @@ export default async function page(props: { params: Promise<{ id: string }> }) {
             <span> / </span>
             <span className='underline'>{id}</span>
 
-            <div className='flex w-full flex-col md:flex-row mt-3'>
-                <div className='flex flex-col items-center max-w-100 border border-gray-200 mr-10 mb-10 md:mb-0 rounded-lg'>
+            <div className='flex w-full flex-col md:flex-row mt-3 '>
+                <div className='flex flex-col items-center justify-center max-w-100 border border-gray-200 m-0 mb-5 sm:mr-10 sm:mb-10 md:mb-0 rounded-lg'>
                     <Image
                         src={product.image}
                         alt={`Image of ${product.name}`}
                         width={400}
                         height={400}
-                        className="mb-4 min-w-100" />
+                        className="mb-4 aspect-square max-h-300" />
                     <div></div>
                     <h2 className='text-xl'> {product.name} </h2>
                     <span className='p-2 pl-5 pr-5 w-full'>

@@ -36,6 +36,8 @@ export default function RootLayout({
           {children}
           <FloatingBasket />
         </BasketProvider>
+        {/* space for basket to sit at bottom */}
+        <div className="w-max h-35"></div>
       </body>
     </html>
   );

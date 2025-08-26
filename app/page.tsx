@@ -1,4 +1,3 @@
-// app/page.tsx
 import Catalogue from "@/app/ui/catalogue";
 import Search from "@/app/ui/search";
 import Filters from "@/app/ui/filters";

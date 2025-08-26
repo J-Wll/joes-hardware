@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useBasket } from "@/app/contexts/basket-context";
 import BasketProduct from "@/app/ui/basket-product";
+import BasketTotalLabel from "@/app/ui/basket-total-label";
 
 export default function FloatingBasket() {
     const { items, clearBasket } = useBasket();
@@ -19,7 +20,7 @@ export default function FloatingBasket() {
 
 
     return (
-        <div className="fixed bottom-4 right-4 z-50 w-80 md:w-96 bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col">
+        <div className="fixed bottom-4 right-4 z-50 w-80  md:w-96 lg:w-108 bg-white border border-gray-300 rounded-lg shadow-lg overflow-hidden flex flex-col">
 
             {/* header */}
             <div className="flex justify-between items-center px-4 py-2 bg-gray-100 border-b border-gray-300 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
@@ -43,22 +44,10 @@ export default function FloatingBasket() {
                     ))}
                     <div>
                         <hr className="mb-2"/>
-                        <div className="flex justify-between font-semibold p-2 py-1">
-                            <span>Subtotal:</span>
-                            <span>£{subtotal.toFixed(2)}</span>
-                        </div>
-                        <div className="flex justify-between font-semibold p-2 py-1">
-                            <span>Delivery:</span>
-                            <span>{delivery}</span>
-                        </div>
-                        <div className="flex justify-between font-semibold p-2 py-1">
-                            <span>Total without installation:</span>
-                            <span>£{totalWithoutInstallation.toFixed(2)}</span>
-                        </div>
-                        <div className="flex justify-between font-semibold p-2 py-1">
-                            <span>Total with installation:</span>
-                            <span>£{totalWithInstallation.toFixed(2)}</span>
-                        </div>
+                        <BasketTotalLabel label="Subtotal:" value={`£${subtotal.toFixed(2)}`}/>
+                        <BasketTotalLabel label="Delivery:" value={`${delivery}`}/>
+                        <BasketTotalLabel label="Total without installation:" value={`£${totalWithoutInstallation.toFixed(2)}`}/>
+                        <BasketTotalLabel label="Total with installation:" value={`£${totalWithInstallation.toFixed(2)}`}/>
                     </div>
                 </div>
             )}
