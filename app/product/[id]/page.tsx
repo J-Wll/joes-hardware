@@ -2,13 +2,18 @@ import React from 'react';
 import { Product } from '@/app/types/product';
 import Image from 'next/image';
 import Link from 'next/link';
-import { StockStatus } from '@/app/ui/stock-status';
+import StockStatus from '@/app/ui/stock-status';
 
 export default async function page(props: { params: Promise<{ id: string }> }) {
     const params = await props.params;
     const id = params.id;
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/single_product?id=${id}`);
     const product: Product = await res.json();
+
+    const installInfo = product.installation_cost ? (
+        `Installation offered for an additional £${product.installation_cost.toFixed(2)}`
+    ) : `Installation not offered for this product`;
+
     return (
         <>
 
@@ -27,20 +32,22 @@ export default async function page(props: { params: Promise<{ id: string }> }) {
                             className="mb-4 min-w-100" />
                         <h2 className='text-xl'> {product.name} </h2>
                     </div>
-                    <div>
+                    <div className='max-w-250'>
                         <p>SKU: {product.sku}</p>
                         <p>Category: {product.category}</p>
                         <p>Price: £{product.price.toFixed(2)}</p>
                         <p>Stock: {product.stock}</p>
-                        <p>Stock status: <StockStatus status = {product.status}/></p>
+                        <p>Stock status: <StockStatus status={product.status} /></p>
                         <br />
-                        <p className='max-w-250'>Lorem ipsum dolor sit amet. Qui consectetur optio sit omnis perspiciatis eos voluptatem nobis in maxime nobis non consequatur numquam sed dolore quisquam At quia autem. Et internos eius ea voluptas doloribus ut voluptas nihil. Et rerum autem est animi provident qui alias libero in similique nobis.
+                        <p>Lorem ipsum dolor sit amet. Qui consectetur optio sit omnis perspiciatis eos voluptatem nobis in maxime nobis non consequatur numquam sed dolore quisquam At quia autem. Et internos eius ea voluptas doloribus ut voluptas nihil. Et rerum autem est animi provident qui alias libero in similique nobis.
                             Et aliquam aliquid qui dolorem consequatur aut enim dolore aut Quis possimus et iure quos. Sit aliquid impedit id provident doloremque ea atque commodi cum facere similique et ipsam molestiae aut facere doloribus. Vel animi dolores rem praesentium eligendi qui praesentium vero sed ipsa impedit aut molestiae saepe ut quidem iure.
                         </p>
 
-                        <br/>
+                        <br />
 
                         <p><b>Restock Information:</b> From ACME Hardware Co. Contact 07577777777. New stock expected in 3 days</p>
+
+                        <br /><p>{installInfo}</p>
 
                     </div>
                 </div>

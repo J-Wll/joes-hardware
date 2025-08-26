@@ -2,7 +2,7 @@
 import Catalogue from "@/app/ui/catalogue";
 import Search from "@/app/ui/search";
 import Filters from "@/app/ui/filters";
-import { CatalogueParams } from "./types/catalogueParams";
+import { CatalogueParams } from "./types/catalogue-params";
 
 export default async function Home({
   searchParams,

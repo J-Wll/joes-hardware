@@ -1,5 +1,5 @@
 import { Product } from "@/app/types/product";
-import { CatalogueParams } from "@/app/types/catalogueParams";
+import { CatalogueParams } from "@/app/types/catalogue-params";
 
 export async function getAllProducts() {
     // mock api call
@@ -9,7 +9,6 @@ export async function getAllProducts() {
 }
 
 export function processProducts(products: Array<Product>, params: CatalogueParams) {
-    console.log("Processing")
     return products.filter((p) => {
         if (params.search) {
             const searchLower = params.search.toLowerCase();

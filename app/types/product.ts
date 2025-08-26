@@ -6,4 +6,5 @@ export type Product = {
     stock: number;
     status: string;
     image: string;
+    installation_cost?: number;
 }

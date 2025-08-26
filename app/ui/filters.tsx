@@ -58,9 +58,9 @@ export default function Filters() {
             </select>
 
             <label htmlFor='minPrice' className={`${spacing}`}>Min price £ </label>
-            <input type="number" id="minPrice" className={`w-12 mr-4 border rounded-lg pl-1 ml-1 text-sm h-6 text-center ${spacing}`} defaultValue={minPriceDefault} onChange={(e) => { handlePriceFilter('minPrice', e.target.value) }} />
+            <input type="number" id="minPrice" min="0" className={`w-12 mr-4 border rounded-lg pl-1 ml-1 text-sm h-6 text-center ${spacing}`} defaultValue={minPriceDefault} onChange={(e) => { handlePriceFilter('minPrice', e.target.value) }} />
             <label htmlFor='maxPrice' className={`${spacing}`}>Max price £ </label>
-            <input type="number" id="maxPrice" className={`w-12 mr-4 border rounded-lg pl-1 ml-1 text-sm h-6 text-center ${spacing}`} defaultValue={maxPriceDefault} onChange={(e) => { handlePriceFilter('maxPrice', e.target.value) }} />
+            <input type="number" id="maxPrice" min="0" className={`w-12 mr-4 border rounded-lg pl-1 ml-1 text-sm h-6 text-center ${spacing}`} defaultValue={maxPriceDefault} onChange={(e) => { handlePriceFilter('maxPrice', e.target.value) }} />
 
             <button className='border rounded-lg px-1 text-sm h-6 text-center cursor-pointer' onClick={resetFilters}>Reset Filters</button>
 

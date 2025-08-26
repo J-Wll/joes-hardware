@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 
-export function StockStatus({ status }: { status: string }) {
+export default function StockStatus({ status }: { status: string }) {
     const statusClasses = clsx(
         'text-black',
         {

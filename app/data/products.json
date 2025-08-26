@@ -15,7 +15,8 @@
     "price": 8.5,
     "stock": 8,
     "status": "Low Stock",
-    "image": "/products/PLU205.webp"
+    "image": "/products/PLU205.webp",
+    "installation_cost": 25.0
   },
   {
     "sku": "ELE301",
@@ -24,7 +25,8 @@
     "price": 3.99,
     "stock": 156,
     "status": "In Stock",
-    "image": "/products/ELE301.webp"
+    "image": "/products/ELE301.webp",
+    "installation_cost": 40.0
   },
   {
     "sku": "GAR410",
@@ -33,7 +35,8 @@
     "price": 45,
     "stock": 0,
     "status": "Out of Stock",
-    "image": "/products/GAR410.webp"
+    "image": "/products/GAR410.webp",
+    "installation_cost": 60.0
   },
   {
     "sku": "TOO502",
@@ -69,7 +72,8 @@
     "price": 15.99,
     "stock": 3,
     "status": "Low Stock",
-    "image": "/products/PLU220.webp"
+    "image": "/products/PLU220.webp",
+    "installation_cost": 40.0
   },
   {
     "sku": "ELE305",
@@ -78,7 +82,8 @@
     "price": 6.99,
     "stock": 89,
     "status": "In Stock",
-    "image": "/products/ELE305.webp"
+    "image": "/products/ELE305.webp",
+    "installation_cost": 10.0
   },
   {
     "sku": "GAR415",
@@ -123,7 +128,8 @@
     "price": 22.99,
     "stock": 15,
     "status": "In Stock",
-    "image": "/products/PLU230.webp"
+    "image": "/products/PLU230.webp",
+    "installation_cost": 30.0
   },
   {
     "sku": "ELE310",
@@ -132,7 +138,8 @@
     "price": 19.99,
     "stock": 41,
     "status": "In Stock",
-    "image": "/products/ELE310.webp"
+    "image": "/products/ELE310.webp",
+    "installation_cost": 10.0
   },
   {
     "sku": "GAR420",
@@ -141,7 +148,8 @@
     "price": 35.99,
     "stock": 9,
     "status": "Low Stock",
-    "image": "/products/GAR420.webp"
+    "image": "/products/GAR420.webp",
+    "installation_cost": 10.0
   },
   {
     "sku": "TOO515",

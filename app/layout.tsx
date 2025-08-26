@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "./ui/header";
+import { BasketProvider } from "@/app/contexts/basket-context";
+import FloatingBasket from "@/app/ui/floating-basket";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,8 +32,10 @@ export default function RootLayout({
       >
         <Header />
 
-
-        {children}
+        <BasketProvider>
+          {children}
+          <FloatingBasket />
+        </BasketProvider>
       </body>
     </html>
   );
