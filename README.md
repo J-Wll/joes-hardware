@@ -1,10 +1,10 @@
 ## Overview
 
 This is a mock project simulating the internal catalogue of a construction materials business. It contains key product details such as price and stock level, a nice responsive layout and a basket feature to enable staff to generate quotes more easily.
-It is currently deployed on vercel and viewable [here](https://joes-hardware.vercel.app/)
+It is currently deployed on Vercel and viewable [here](https://joes-hardware.vercel.app/).
 
 ## Install
 
-- Clone the repository then run npm i or pnpm i to install dependencies.
+- Clone the repository, then run npm i or pnpm i to install dependencies.
 - Configure the .env file to include a NEXT_PUBLIC_BASE_URL equal to the websites url. http://localhost:3000 is common for testing. This is used for the simulated API URL calls.
-- Use npm run dev or pnpm run dev to launch the project
+- Use npm run dev or pnpm run dev to launch the project.
