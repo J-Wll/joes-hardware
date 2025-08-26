@@ -5,7 +5,7 @@ import { StockStatus } from "./stock-status"
 
 export default function Card({ content }: { content: Product }) {
     return (
-        <div className="display-flex flex-col border border-gray-200 rounded-lg max-w-50 lg:max-w-71 xl:max-w-80 text-center p-2 min-h-105 align-middle justify-center">
+        <div className="display-flex flex-col border border-gray-200 rounded-lg max-w-35 md:max-w-50 lg:max-w-71 xl:max-w-80 text-center p-2 min-h-105 align-middle justify-center">
             <Link href={`/product/${content.sku}`} aria-label={`View details for ${content.name}`}>
                 <Image
                     src={`${content.image}`}

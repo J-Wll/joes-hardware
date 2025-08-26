@@ -38,6 +38,10 @@ export default async function page(props: { params: Promise<{ id: string }> }) {
                             Et aliquam aliquid qui dolorem consequatur aut enim dolore aut Quis possimus et iure quos. Sit aliquid impedit id provident doloremque ea atque commodi cum facere similique et ipsam molestiae aut facere doloribus. Vel animi dolores rem praesentium eligendi qui praesentium vero sed ipsa impedit aut molestiae saepe ut quidem iure.
                         </p>
 
+                        <br/>
+
+                        <p><b>Restock Information:</b> From ACME Hardware Co. Contact 07577777777. New stock expected in 3 days</p>
+
                     </div>
                 </div>
             </main>
