@@ -1,3 +1,5 @@
+<img width="1920" height="925" alt="image" src="https://github.com/user-attachments/assets/762ffa72-2f51-47cf-876d-756334c7e866" />
+
 ## Overview
 
 This is a mock project simulating the internal catalogue of a construction materials business. It contains key product details such as price and stock level, a nice responsive layout and a basket feature to enable staff to generate quotes more easily.
