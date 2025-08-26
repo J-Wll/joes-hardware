@@ -8,5 +8,5 @@ It is currently deployed on Vercel and viewable [here](https://joes-hardware.ver
 ## Install
 
 - Clone the repository, then run npm i or pnpm i to install dependencies.
-- Configure the .env file to include a NEXT_PUBLIC_BASE_URL equal to the websites url. http://localhost:3000 is common for testing. This is used for the simulated API URL calls.
+- Configure the .env file to include a NEXT_PUBLIC_BASE_URL equal to the websites url. http://localhost:3000 is common for testing. This is used as the URL for simulated API calls.
 - Use npm run dev or pnpm run dev to launch the project.
