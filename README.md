@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a mock project simulating the internal catalogue of a construction materials business. It contains key product details such as price and stock level, a nice responsive layout and a basket feature to enable staff to generate quotes more easily.
+This is a project of an internal catalogue for a mock construction materials business. It contains key product details such as price and stock level, a nice responsive layout and a basket feature to enable staff to generate quotes more easily.
 It is currently deployed on Vercel and viewable [here](https://joes-hardware.vercel.app/).
 
 ## Install
