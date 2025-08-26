@@ -6,7 +6,7 @@ export type BasketItem = {
   quantity: number;
   price: number;
   installation_cost?: number;
-  stock?: number;
+  stock: number;
 };
 
 export type BasketContextType = {

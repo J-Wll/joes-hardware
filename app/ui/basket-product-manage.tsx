@@ -30,9 +30,9 @@ export default function BasketItemManage({ product }: { product: Product }) {
     );
 
     return (
-        <div className="flex flex-row justify-between my-3">
-            <button disabled={!canRemove} className={`${removeButton}`} onClick={() => reduceItem(basketItem)}>-</button>
-            <button disabled={!canAdd} onClick={() => addItem(basketItem)} className={`${addButton} `}>
+        <div className="flex flex-row justify-between my-3 w-full ">
+            <button disabled={!canRemove} aria-label={`Remove a ${product.name} from the basket`} className={`${removeButton}`} onClick={() => reduceItem(basketItem)}>-</button>
+            <button disabled={!canAdd} aria-label={`Add a ${product.name} to basket`} onClick={() => addItem(basketItem)} className={`${addButton} `}>
                 +
             </button>
 
